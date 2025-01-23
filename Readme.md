@@ -7,7 +7,7 @@ A comprehensive toolset for managing macOS application releases using the Sparkl
 - Automated version management
 - DMG creation and signing
 - Notarization with Apple's notary service
-- Sparkle framework integration for automatic updates
+- [Sparkle](https://sparkle-project.org) framework integration for automatic updates
 - Appcast XML generation and management (beta)
 - Configurable release types (major, minor, patch) (beta)
 
@@ -19,7 +19,7 @@ A comprehensive toolset for managing macOS application releases using the Sparkl
 - Required Python packages:
   - lxml
 - Valid Apple Developer ID
-- Sparkle framework integration in your app
+- [Sparkle](https://sparkle-project.org) framework integration in your app
 - AWS S3 bucket (or similar) for hosting updates
 
 ## Installation
@@ -76,7 +76,7 @@ To create a new release:
 | Option | Description |
 |--------|-------------|
 | -t, --type    | Version type ( major \| minor \| patch ) |
-| -s, --sparkle | Path to Sparkle binary |
+| -s, --sparkle | Path to Sparkle binary [how to get it?](https://sparkle-project.org/documentation/#1-add-the-sparkle-framework-to-your-project) |
 | -n, --notes   | Release notes ( HTML format supported ) |
 | -p, --project | Path to Xcode project directory (overrides config.sh) |
 | -h, --help    | Show help message |
@@ -113,9 +113,9 @@ project/
 
 ## Sparkle Integration
 
-Ensure your application has Sparkle framework integrated:
+Ensure your application has [Sparkle](https://sparkle-project.org) framework integrated:
 
-1. Add Sparkle to your Xcode project
+1. Add [Sparkle](https://sparkle-project.org/documentation/#1-add-the-sparkle-framework-to-your-project) to your Xcode project
 2. Configure your `Info.plist` with:
     ```xml
     <key>SUFeedURL</key>
